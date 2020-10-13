@@ -20,7 +20,7 @@ The command "lshow" is an alias utilized by another one of Keorin's scripts for 
 
 ### **Mindnet**
 
-# **Character Database (Character DB) for Nexus is required for a portion of this script to work correctly.**
+### **Character Database (Character DB) for Nexus is required for a portion of this script to work correctly.**
 It can be found here: https://forums.achaea.com/discussion/6527/character-db-nexus
 
 `ameer_party_mindnet`
