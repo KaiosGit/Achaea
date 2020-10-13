@@ -31,6 +31,7 @@ The command "lshow" is an alias utilized by another one of Keorin's scripts for 
 `person`
 `area`
 `tmpArea`
+'citynet'
 
 ### **Fullsense**
 
