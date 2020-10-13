@@ -1,11 +1,5 @@
 # Achaea
 
-## **Note regarding Consolidated monk combos modified**
-
-The package includes this line at the end of each of the aliases: ```setTimeout(function(){ send_command("lshow"); }, 500);```
-
-The command "lshow" is an alias utilized by another one of Keorin's scripts for limb tracking, prompting the target's current limb status.
-
 ## **List of Variables: Add these to the Nexus variable list manually if any issues occur in relation to declaring variables within the scripts.**
 
 ### **Mind Sense**
@@ -13,10 +7,6 @@ The command "lshow" is an alias utilized by another one of Keorin's scripts for 
 `sense_name`
 `sense_area`
 `sense_command`
-
-### **Consolidated Monk Combos (Modified)**
-
-`my_aeon` (This variable is used in the tracking of aeon affliction through GMCP, script needs modification if unnecessary)
 
 ### **Mindnet**
 
