@@ -23,9 +23,9 @@ MASTOP : Stops prospecting. Will continue prospecting from the stopping point wh
 
 MACOLLECT : Turns ON or OFF the Mine Collection. Starts OFF by default. Does not work properly without the CharacterDB package (Refer to OPTIONAL requirements above).
 
-MAWINGS : Turns ON or OFF Wings Mode. Starts OFF by default. *(WINGS MODE MAY NOT FUNCTION CORRECTLY AT THIS TIME)*
+MAWINGS : Turns ON or OFF Wings Mode. Starts OFF by default. **(WINGS MODE MAY NOT FUNCTION CORRECTLY AT THIS TIME)**
 
-MALODE : Reports the lode that was last prospected. *Initially disabled. Ensure that you designate a CLANTELL for this within the appropriate alias before enabling*.
+MALODE : Reports the lode that was last prospected. **Initially disabled. Ensure that you designate a CLANTELL for this within the appropriate alias before enabling.**
 
 MALODESIZE <size> : Sets the size of lode that prospecting will stop at. Tiny, Small, Medium, Large, Huge, or Massive.
 
@@ -49,7 +49,7 @@ vashs = Vashnar Mountains South
 
 MAMINES : Display a list of Mines and Lodes collected during prospecting (No Mines will be collected if Mine Collection is OFF).
 
-MASEARCH <input> : Search the Mine Collection for a name or value. Returns each mine that contains a match. // Credit to Khaseem for this alias.
+MASEARCH <input> : Search the Mine Collection for a name or value. Returns each mine that contains a match. **Credit to Khaseem for this alias.**
 
 MARESET : Resets the variables used in Prospecting and Data Collection (In most cases used for testing purposes). Route will be set back to the beginning and mine and lode collection will be erased.
 
