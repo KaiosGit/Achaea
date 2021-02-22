@@ -1,6 +1,6 @@
 # Mining Assistant
 
-Mining Assistant version 1.1
+Mining Assistant version 1.1<br/>
 Created by Kaios
 
 
