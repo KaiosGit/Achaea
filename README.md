@@ -62,8 +62,8 @@ To-do List
 - (PARTIALLY RESOLVED) Complete allowance for Wings Mode; Ensure there are no issues with movement and destination tracking, set room orders specific for Wings Mode.
 - Different types of wings to account for?
 - Devise method to handle room order customization (beyond manual user modification).
-- Account for wendigos in Tundra. At present, their knock-down occasionally interferes with prospecting which must then be re-initialized using MAPR.
-✓ (RESOLVED): Vision loss (such as caused by blizzards) interferes with proper GMCP identification of items (eg. reading signs, identify walls).
+- Account for wendigos in Tundra. At present, their knock-down occasionally interferes with prospecting which must then be re-initialized using MAPR.<br/>
+✓  (RESOLVED): Vision loss (such as caused by blizzards) interferes with proper GMCP identification of items (eg. reading signs, identify walls).<br/>
 - Travel method from main land to Tundra? Fissure of Echoes?
 - Option to send Mine/Lode collection to a text file. Save to the same file each time? Create multiple files? If pushing to same, also need date/time (in-game and real) to separate. If pushing to multiple, need date/time as file name.
 - Automate lode reporting.
