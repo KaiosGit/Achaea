@@ -81,4 +81,4 @@ A very special thank you to **FangFang** not only in relation to this package, b
 
 **Voka**, for the creation of the CharacterDB package which is an incredibly useful tool.
 
-Thank you to the testers, **Svenson** and **Aranos**!
+Thank you to the testers, **Svenson**, **Aranos**, and **Argwin**!
