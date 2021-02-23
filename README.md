@@ -32,20 +32,20 @@ MALODESIZE <size> : Sets the size of lode that prospecting will stop at. Tiny, S
 MAROUTE <route> : Set the route by area that will be prospected. Refer to Route Keys list below for short-name definitions.
 Examples: maroute gra san vashcen dun vashs mhocen mhosw sir shamte pashe pashw shamtw OR maroute dak vashs sir gra ... and so on.
 
-Route Keys:
-dak = Dakhota Hills
-dun = Dun Valley
-gra = Granite Hills
-mhocen = Mhojave Desert Central
-mhosw = Mhojave Desert Southwest
-pashe = Pash Valley East
-pashw = Pash Valley West
-san = Sangre Plains
-shamte = Shamtota Hills East
-shamtw = Shamtota Hills West
-sir = Sirrocian Mountains
-vashcen = Vashnar Mountains Central
-vashs = Vashnar Mountains South
+Route Keys:<br/>
+dak = Dakhota Hills<br/>
+dun = Dun Valley<br/>
+gra = Granite Hills<br/>
+mhocen = Mhojave Desert Central<br/>
+mhosw = Mhojave Desert Southwest<br/>
+pashe = Pash Valley East<br/>
+pashw = Pash Valley West<br/>
+san = Sangre Plains<br/>
+shamte = Shamtota Hills East<br/>
+shamtw = Shamtota Hills West<br/>
+sir = Sirrocian Mountains<br/>
+vashcen = Vashnar Mountains Central<br/>
+vashs = Vashnar Mountains South<br/>
 
 MAMINES : Display a list of Mines and Lodes collected during prospecting (No Mines will be collected if Mine Collection is OFF).
 
