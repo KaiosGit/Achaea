@@ -21,7 +21,7 @@ MAPR : Begins prospecting.
 
 MASTOP : Stops prospecting. Will continue prospecting from the stopping point when re-initialized with MAPR.
 
-MACOLLECT : Turns ON or OFF the Mine Collection. Starts OFF by default. Does not work properly without the CharacterDB package (Refer to OPTIONAL requirements above).
+MACOLLECT : Turns ON or OFF the Mine Collection. Starts OFF by default. Does not work properly without the CharacterDB package. **(Refer to OPTIONAL requirements above)**
 
 MAWINGS : Turns ON or OFF Wings Mode. Starts OFF by default. **(WINGS MODE MAY NOT FUNCTION CORRECTLY AT THIS TIME)**
 
