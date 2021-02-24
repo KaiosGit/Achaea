@@ -27,9 +27,9 @@ MAWINGS : Turns ON or OFF Wings Mode. Starts OFF by default. **(WINGS MODE MAY N
 
 MALODE : Reports the lode that was last prospected. **Initially disabled. Ensure that you designate a CLANTELL for this within the appropriate alias before enabling.**
 
-MALODESIZE <size> : Sets the size of lode that prospecting will stop at. Tiny, Small, Medium, Large, Huge, or Massive.
+MALODESIZE \<size\> : Sets the size of lode that prospecting will stop at. Tiny, Small, Medium, Large, Huge, or Massive.
 
-MAROUTE <route> : Set the route by area that will be prospected. Refer to Route Keys list below for short-name definitions.
+MAROUTE \<route\> : Set the route by area that will be prospected. Refer to Route Keys list below for short-name definitions.
 Examples: maroute gra san vashcen dun vashs mhocen mhosw sir shamte pashe pashw shamtw OR maroute dak vashs sir gra ... and so on.
 
 Route Keys:<br/>
@@ -49,7 +49,7 @@ vashs = Vashnar Mountains South<br/>
 
 MAMINES : Display a list of Mines and Lodes collected during prospecting (No Mines will be collected if Mine Collection is OFF).
 
-MASEARCH <input> : Search the Mine Collection for a name or value. Returns each mine that contains a match. **Credit to Khaseem for this alias.**
+MASEARCH \<input\> : Search the Mine Collection for a name or value. Returns each mine that contains a match. **Credit to Khaseem for this alias.**
 
 MARESET : Resets the variables used in Prospecting and Data Collection (In most cases used for testing purposes). Route will be set back to the beginning and mine and lode collection will be erased.
 
