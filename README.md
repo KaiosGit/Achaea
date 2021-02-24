@@ -75,7 +75,7 @@ Credits
 -------
 A very special thank you to **FangFang** not only in relation to this package, but also for his constant assistance and support that he has generously given to myself and many others with Nexus scripting.
 
-**Khaseem**, for his very helpful assistance in devising a better queueing method and for the use of his Walkto package's search alias.
+**Khaseem**, for his very helpful assistance in devising a better queueing method, the use of his Walkto package's search alias, and for improving my coding practices.
 
 **Zahan**, for without his MapDB package it would be far more difficult to create such packages like this in the first place.
 
