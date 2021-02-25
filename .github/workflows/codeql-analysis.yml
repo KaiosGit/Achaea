@@ -27,8 +27,8 @@ jobs:
 
     strategy:
       fail-fast: false
-      # matrix:
-        # language: [ 'java', 'javascript' ]
+      matrix:
+        language: [ 'java', 'javascript' ]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
@@ -68,6 +68,12 @@ jobs:
         
     - if: matrix.language == 'javascript'
       name: Build JavaScript
+      run: |
+        make bootstrap
+        make release
+        
+    - if: matrix.language == 'typescript'
+      name: Build TypeScript
       run: |
         make bootstrap
         make release
