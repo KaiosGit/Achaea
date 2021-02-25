@@ -1,6 +1,6 @@
 # Mining Assistant for Nexus
 
-Mining Assistant version 1.2<br/>
+Mining Assistant version 1.3<br/>
 Created by Kaios
 
 
