@@ -1,6 +1,6 @@
-# Changelog
+# Mining Assistant for Nexus\: Changelog
 
-## February 24, 2021
+## February 24, 2021 \- Mining Assistant version 1.3
 ### Changes
 - Included MARESET and MAVALS in the command list displayed with MA for the time being. Ideally, these will eventually not be necessary to include.
 - Added the 'KnockedDownTundra' trigger in the 'ProspectReflex' group. This should account for being stopped by the prone that the wendigos in the Tundra use and during my testing it was successful. There may be some weirdness with that still however so I have marked it as partially resolved for now.
