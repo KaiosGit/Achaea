@@ -13,7 +13,7 @@
 - Variable set added in 'TooFarAway' trigger
 - Adjusted some of the logic in trigger 'ArrivedDestination'
 - Adjusted some of the logic in trigger 'SettingsDisplay'
-- Modified parts of the onGMCP to set/change values only when prospecting is happening.
+- Modified some parts of the onGMCP to set/change values only when prospecting is happening.
 
 ### Issues
 - Noticed an issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array. Uncertain what the best solution for this might be but I've added it to the To-do list in any case.
