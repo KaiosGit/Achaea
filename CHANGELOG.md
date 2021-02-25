@@ -1,4 +1,5 @@
-# Mining Assistant for Nexus\: Changelog
+# Mining Assistant for Nexus
+# Changelog
 
 ## February 24, 2021 \- Mining Assistant version 1.3
 ### Changes
