@@ -17,4 +17,4 @@
 
 ### Issues
 - Noticed an issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array. Uncertain what the best solution for this might be but I've added it to the To-do list in any case.
-- For those who prospect with a mount and have something in place to mount again should get they knocked off, this could also interfere with prospecting such as with the wendigos in the Tundra as there is nothing currently in place at this time that deals with mounting.
+- For those who prospect with a mount and have something in place to mount again should they get knocked off, this could also interfere with prospecting such as with the wendigos in the Tundra as there is nothing currently in place at this time that deals with mounting.
