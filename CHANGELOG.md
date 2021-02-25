@@ -12,7 +12,7 @@
 - Fixed a display notice error in trigger 'ProspectReflex4'
 - Variable set added in 'TooFarAway' trigger
 - Adjusted some of the logic in trigger 'ArrivedDestination'
-- Adjusted some of the logic in trigger 'SettingsDisplay'
+- Adjusted some of the logic in alias 'SettingsDisplay'
 - Modified some parts of the onGMCP to set/change values only when prospecting is happening.
 
 ### Issues
