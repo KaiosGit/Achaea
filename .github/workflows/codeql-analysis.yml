@@ -13,10 +13,10 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ main, miningassistant ]
+    branches: [ miningassistant ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ main, miningassistant ]
+    branches: [ miningassistant ]
   schedule:
     - cron: '27 11 * * 0'
 
@@ -49,7 +49,7 @@ jobs:
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
-    - if: matrix.language == 'cpp' || matrix.language == 'csharp' || matrix.language == 'go' || matrix.language == 'python'
+    - if: matrix.language == 'java' || matrix.language == 'javascript' || matrix.language == 'cpp' || matrix.language == 'csharp' || matrix.language == 'go' || matrix.language == 'python'
       name: Autobuild
       uses: github/codeql-action/autobuild@v1
 
