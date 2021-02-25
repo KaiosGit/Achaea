@@ -10,9 +10,9 @@
 - Moved 'RoomCollect' group to inside 'ProspectTriggers' group
 - Fixed a display notice error in alias 'SetRoute'
 - Fixed a display notice error in trigger 'ProspectReflex4'
-- Minor addition in 'TooFarAway' trigger
+- Variable set added in 'TooFarAway' trigger
 - Adjusted some of the logic in trigger 'ArrivedDestination'
-- Adjusted some of the logic in trigger 'SettingDisplay'
+- Adjusted some of the logic in trigger 'SettingsDisplay'
 - Modified parts of the onGMCP to set/change values only when prospecting is happening.
 
 ### Issues
