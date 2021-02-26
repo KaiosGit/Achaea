@@ -69,8 +69,8 @@ To-do List
 - Option to send Mine/Lode collection to a text file. Save to the same file each time? Create multiple files? If pushing to same, also need date/time (in-game and real) to separate. If pushing to multiple, need date/time as file name.
 - Automate lode reporting.
 - Alter search alias to not return partial matches.
-- Need method to avoid pushing duplicate strings to mine collection and lode collection arrays.
-- Issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array.
+- Need method to avoid pushing duplicate strings to mine collection and lode collection arrays.<br/>
+✓ (RESOLVED): Issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array.
 - Trigger 'DestinationTrack' occasionally fires twice. This might be due to the STOP command in the trigger being sent when no movement is occuring and then it tries again after movement continues (thus firing for both rooms), or it may just be related to latency and the fast movement rate.
 
 
