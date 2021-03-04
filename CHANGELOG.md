@@ -21,7 +21,7 @@
 ### Issues
 
 - Opted to remove the parameter in the onGMCP that requires prospecting to be occuring before some things are set as it was causing a few issues. For example with Mine Collection's sign reading when first entering the Tundra, since you are not prospecting on initial entry and due to that change I made in the onGMCP to prevent Char.Items.List from setting anything while prospecting is not occurring, the item id of the sign was not being collected and would not be read properly. Or also, when entering the Tundra in to a blizzard. I do not believe that anything I have going on in the GMCP is doing anything intensive but I will think about how I could implement a better solution for this, such as only requiring the item id of a sign to be necessary in the case there are other signs in the room.
-- Still need to include Stone Wall identification for the 'BlockedByWall' trigger
+- Still need to include Stone Wall identification for the 'BlockedByWall' trigger.
 
 ## February 26, 2021 \- Mining Assistant version 1.4
 ### Changes
