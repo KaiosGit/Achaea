@@ -4,7 +4,7 @@
 ## March 4, 2021 \- Mining Assistant version 1.5
 ### Changes
 
-- Added a GMCP Request for **'Char.Skills.Get'** to the onLoad.
+- Added a GMCP Request for `Char.Skills.Get` to the onLoad.
 - Implemented a check in the onGMCP that checks character Riding rank and enables the **'BlockedByWall'** trigger if at Expert or greater, or ensures the trigger is disabled otherwise.
 - Added **'Blocked'** group within the **'ProspectReflex'** group and moved the trigger **'BlockedByWall'** inside of it.
 - Adjusted some of the logic in trigger **'BlockedByWall'** and separated in to other triggers.
