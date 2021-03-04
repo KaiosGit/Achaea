@@ -3,7 +3,7 @@
 Mining Assistant version 1.5<br/>
 Created by Kaios
 
-In order to download this package, you may click the package itself and then right click on 'Raw' and 'Save Link as' OR click the green **Code** button and download the ZIP file.
+In order to download this package, you may click the package itself and then right click on 'Raw' and 'Save Link as' OR<br>Click the green **Code** button and download the ZIP file.
 
 REQUIREMENTS - PLEASE READ
 --------------------------
