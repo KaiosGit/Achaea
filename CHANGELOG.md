@@ -1,6 +1,28 @@
 # Mining Assistant for Nexus
 # Changelog
 
+## March 4, 2021 \- Mining Assistant version 1.5
+### Changes
+
+- Added a GMCP Request for 'Char.Skills.Get' to the onLoad.
+- Implemented a check in the onGMCP that checks character Riding rank and enables the mountjump trigger if at Expert or greater, or ensures the trigger is disabled otherwise.
+- Added 'Blocked' group within the 'ProspectReflex' group and moved the trigger 'BlockedByWall' inside of it.
+- Adjusted some of the logic in trigger 'BlockedByWall' and separated in to other triggers.
+- Created trigger 'MountJumping' in 'Blocked' group.
+- Created trigger 'JumpComplete' in 'Blocked' group.
+- Removed a section of code in the trigger 'ArrivedDestination' that appeared to be redundant. May somewhat improve the rate at which the code is executed during prospecting.
+- Adjusted some of the logic in trigger 'KnockedDownTundra'
+- Adjusted some of the logic in alias 'SetLodeDetection'
+- Adjusted some of the logic in alias 'On/Off Alias'
+- Adjusted some of the logic in trigger 'DestinationTrack'
+- Adjusted some of the logic in trigger 'ProspectReflex2'
+- Removed the 'Incomplete' group since there is nothing in it at this time.
+
+### Issues
+
+- Opted to remove the parameter in the onGMCP that requires prospecting to be occuring before some things are set as it was causing a few issues. For example with Mine Collection's sign reading when first entering the Tundra, since you are not prospecting on initial entry and due to that change I made in the onGMCP to prevent Char.Items.List from setting anything while prospecting is not occurring, the item id of the sign was not being collected and would not be read properly. Or also, when entering the Tundra in to a blizzard. I do not believe that anything I have going on in the GMCP is doing anything intensive but I will think about how I could implement a better solution for this, such as only requiring the item id of a sign to be necessary in the case there are other signs in the room.
+- Still need to include Stone Wall identification for the 'BlockedByWall' trigger
+
 ## February 26, 2021 \- Mining Assistant version 1.4
 ### Changes
 
