@@ -4,28 +4,28 @@
 ## March 12, 2021 \- Mining Assistant version 1.6
 ### Changes
 
-- Adjusted some of the logic in the onGMCP function: Modified how vision is being checked for when `Room.Info` occurs. Also changed the 'ma.blizzard' variable to 'ma.vision' in the onLoad and adjusted the triggers 'ProspectReflex2', 'BlockedByWall', and 'Blizzard' accordingly.
-- Adjusted some of the logic in the onGMCP function: More specifically, made some changes to how `Char.Items.List` is being iterated.
-- Adjusted some of the logic in alias 'DataDisplay'
-- Adjusted some of the logic in alias 'SearchMines'
-- Adjusted some of the logic in alias 'mavals'
-- Added the variable set for `ma.ridingSkill` to the onGMCP function. Forgot to add this previously, apologies!
-- Removed the Wait For action and the script following it from trigger 'KnockedDownTundra'
-- Added trigger 'StandUp' in group 'ProspectReflex' with script removed from 'KnockedDownTundra'
-- Included a short timeout before 'ProspectTriggers' group gets disabled in functions `ma.lodeDetected`, `ma.movementMain2`, and `ma.movementTundra2` to ensure that when a mine is found in the last room to be prospected, or when a lode is stopped at, that they get pushed to the collection tables.
+- Adjusted some of the logic in the **onGMCP** function: Modified how vision is being checked for when `Room.Info` occurs. Also changed the `ma.blizzard` variable to `ma.vision` in the onLoad and adjusted the triggers **'ProspectReflex2'**, **'BlockedByWall'**, and **'Blizzard'** accordingly.
+- Adjusted some of the logic in the **onGMCP** function: More specifically, made some changes to how `Char.Items.List` is being iterated.
+- Adjusted some of the logic in alias **'DataDisplay'**
+- Adjusted some of the logic in alias **'SearchMines'**
+- Adjusted some of the logic in alias **'mavals'**
+- Added the variable set for `ma.ridingSkill` to the **onGMCP** function. Forgot to add this previously, apologies!
+- Removed the Wait For action and the script following it from trigger **'KnockedDownTundra'**
+- Added trigger **'StandUp'** in group **'ProspectReflex'** with script removed from **'KnockedDownTundra'**
+- Included a short timeout before **'ProspectTriggers'** group gets disabled in functions `ma.lodeDetected`, `ma.movementMain2`, and `ma.movementTundra2` to ensure that when a mine is found in the last room to be prospected, or when a lode is stopped at, that they get pushed to the collection tables.
 	#### Wings Mode
-	- Modified alias 'StartProspecting' to account for being inside of a City when WINGS MODE is ON. If you are when prospecting is initialized, you will simply go to the Skies from there (provided you are not indoors) rather than go through the process of tracking the distance to your next destination.
-   	- Added the variable set for being indoors or not to the onGMCP function.
-   	- Modified trigger 'DestinationTrack' to stop prospecting and prompt user to move outside should use of Wings be attempted at an indoor location.
+	- Modified alias **'StartProspecting'** to account for being inside of a City when WINGS MODE is ON. If you are when prospecting is initialized, you will simply go to the Skies from there (provided you are not indoors) rather than go through the process of tracking the distance to your next destination.
+   	- Added the variable set for being indoors or not to the **onGMCP** function.
+   	- Modified trigger **'DestinationTrack'** to stop prospecting and prompt user to move outside should use of Wings be attempted at an indoor location.
 
-All FUNCTIONS that were being both created and executed in the various prospecting triggers are now only being created in the onLoad. Hopefully this change offers some significant improvement to the overall speed at which the triggers are being executed during prospecting. The following triggers have been modified as a result\:<br>
-- 'StartProspecting' trigger
-- 'ArrivedDestination' trigger
-- 'ProspectReflex1' trigger
-- 'ProspectReflex2' trigger
-- 'ProspectReflex3' trigger
-- 'ProspectReflex4' trigger
-- 'JumpComplete' trigger
+### All FUNCTIONS that were being both created and executed in the various prospecting triggers are now only being created in the **onLoad**. Hopefully this change offers some significant improvement to the overall speed at which the triggers are being executed during prospecting. The following triggers have been modified as a result\:
+- **'StartProspecting'** trigger
+- **'ArrivedDestination'** trigger
+- **'ProspectReflex1'** trigger
+- **'ProspectReflex2'** trigger
+- **'ProspectReflex3'** trigger
+- **'ProspectReflex4'** trigger
+- **'JumpComplete'** trigger
 
 ## March 4, 2021 \- Mining Assistant version 1.5
 ### Changes
