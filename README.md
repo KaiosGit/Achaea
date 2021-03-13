@@ -1,6 +1,6 @@
 # Mining Assistant for Nexus
 
-Mining Assistant version 1.5<br/>
+Mining Assistant version 1.6<br/>
 Created by Kaios
 
 In order to download this package, you may click the package itself and then right click on 'Raw' and 'Save Link as' OR<br>Click the green **Code** button and download the ZIP file.
@@ -59,20 +59,22 @@ MAVALS : Display some relevant values (In most cases used for testing purposes).
 
 To-do List
 ----------
-- (PARTIALLY RESOLVED) Complete blocked by wall trigger. (Need method to discern the user's capabilities, eg. can they leap? are they mounted?)
-- If user is mounted, need implementation that deals with re-mounting during prospecting if/when knocked off mount.
-- (PARTIALLY RESOLVED) Complete allowance for Wings Mode; Ensure there are no issues with movement and destination tracking, set room orders specific for Wings Mode.
-- Different types of wings to account for?
-- Devise method to handle room order customization (beyond manual user modification).
-- (PARTIALLY RESOLVED) Account for wendigos in Tundra. At present, their knock-down occasionally interferes with prospecting which must then be re-initialized using MAPR.<br/>
-✓  (RESOLVED): Vision loss (such as caused by blizzards) interferes with proper GMCP identification of items (eg. reading signs, identify walls).<br/>
-- Travel method from main land to Tundra? Fissure of Echoes?
-- Option to send Mine/Lode collection to a text file. Save to the same file each time? Create multiple files? If pushing to same, also need date/time (in-game and real) to separate. If pushing to multiple, need date/time as file name.
-- Automate lode reporting.
-- Alter search alias to not return partial matches.
-- Need method to avoid pushing duplicate strings to mine collection and lode collection arrays.<br/>
-✓ (RESOLVED): Issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array.
 - Trigger 'DestinationTrack' occasionally fires twice. This might be due to the STOP command in the trigger being sent when no movement is occuring and then it tries again after movement continues (thus firing for both rooms), or it may just be related to latency and the fast movement rate.
+- Devise method to handle room order customization (beyond manual user modification).
+- Option to send Mine/Lode collection to a text file. Save to the same file each time? Create multiple files? If pushing to same, also need date/time (in-game and real) to separate. If pushing to multiple, need date/time as file name.
+- If user is mounted, need implementation that deals with re-mounting during prospecting if/when knocked off mount.
+- Travel method from main land to Tundra? Fissure of Echoes?
+- Automate lode reporting.
+- Alter search alias to not return partial matches. (maybe, not entirely necessary)
+- Need method to avoid pushing duplicate strings to mine collection and lode collection arrays.
+
+- (PARTIALLY RESOLVED) Complete 'BlockedByWall' trigger. (Need method to discern the user's capabilities, eg. can they leap? are they mounted?)
+- (PARTIALLY RESOLVED) Complete allowance for Wings Mode; Ensure there are no issues with movement and destination tracking, set room orders specific for Wings Mode.
+- (PARTIALLY RESOLVED) Different types of wings to account for?
+- (PARTIALLY RESOLVED) Account for wendigos in Tundra. At present, their knock-down occasionally interferes with prospecting which must then be re-initialized using MAPR.
+<br>
+✓ (RESOLVED): Vision loss (such as caused by blizzards) interferes with proper GMCP identification of items (eg. reading signs, identify walls).<br>
+✓ (RESOLVED): Issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array.
 
 
 Credits
