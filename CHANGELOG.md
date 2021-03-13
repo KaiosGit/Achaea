@@ -1,6 +1,32 @@
 # Mining Assistant for Nexus
 # Changelog
 
+## March 12, 2021 \- Mining Assistant version 1.6
+### Changes
+
+- Adjusted some of the logic in the onGMCP function: Modified how vision is being checked for when `Room.Info` occurs. Also changed the 'ma.blizzard' variable to 'ma.vision' in the onLoad and adjusted the triggers 'ProspectReflex2', 'BlockedByWall', and 'Blizzard' accordingly.
+- Adjusted some of the logic in the onGMCP function: More specifically, made some changes to how `Char.Items.List` is being iterated.
+- Adjusted some of the logic in alias 'DataDisplay'
+- Adjusted some of the logic in alias 'SearchMines'
+- Adjusted some of the logic in alias 'mavals'
+- Added the variable set for `ma.ridingSkill` to the onGMCP function. Forgot to add this previously, apologies!
+- Removed the Wait For action and the script following it from trigger 'KnockedDownTundra'
+- Added trigger 'StandUp' in group 'ProspectReflex' with script removed from 'KnockedDownTundra'
+- Included a short timeout before 'ProspectTriggers' group gets disabled in functions `ma.lodeDetected`, `ma.movementMain2`, and `ma.movementTundra2` to ensure that when a mine is found in the last room to be prospected, or when a lode is stopped at, that they get pushed to the collection tables.
+	#### Wings Mode
+	- Modified alias 'StartProspecting' to account for being inside of a City when WINGS MODE is ON. If you are when prospecting is initialized, you will simply go to the Skies from there (provided you are not indoors) rather than go through the process of tracking the distance to your next destination.
+   	- Added the variable set for being indoors or not to the onGMCP function.
+   	- Modified trigger 'DestinationTrack' to stop prospecting and prompt user to move outside should use of Wings be attempted at an indoor location.
+
+All FUNCTIONS that were being both created and executed in the various prospecting triggers are now only being created in the onLoad. Hopefully this change offers some significant improvement to the overall speed at which the triggers are being executed during prospecting. The following triggers have been modified as a result\:<br>
+- 'StartProspecting' trigger
+- 'ArrivedDestination' trigger
+- 'ProspectReflex1' trigger
+- 'ProspectReflex2' trigger
+- 'ProspectReflex3' trigger
+- 'ProspectReflex4' trigger
+- 'JumpComplete' trigger
+
 ## March 4, 2021 \- Mining Assistant version 1.5
 ### Changes
 
@@ -17,7 +43,6 @@
 - Adjusted some of the logic in trigger **'DestinationTrack'**
 - Adjusted some of the logic in trigger **'ProspectReflex2'**
 - Removed the **'Incomplete'** group since there is nothing in it at this time.
-
 ### Issues
 
 - Opted to remove the parameter in the onGMCP that requires prospecting to be occuring before some things are set as it was causing a few issues. For example with Mine Collection's sign reading when first entering the Tundra, since you are not prospecting on initial entry and due to that change I made in the onGMCP to prevent Char.Items.List from setting anything while prospecting is not occurring, the item id of the sign was not being collected and would not be read properly. Or also, when entering the Tundra in to a blizzard. I do not believe that anything I have going on in the GMCP is doing anything intensive but I will think about how I could implement a better solution for this, such as only requiring the item id of a sign to be necessary in the case there are other signs in the room.
@@ -30,8 +55,7 @@
 - Switched from `var` to `let` for the variable setting in alias **'SetLodeDetection'**
 - Slight adjustment to a display notice in alias **'SetLodeDetection'**
 - Changed the highlighting for many of the display notices to something more pleasant, but retained original highlighting for onLoad, stopping at lodes, errors, and other important notices.
-	
-  #### Wings Mode
+	#### Wings Mode
 	- Changed trigger **'CloudsMovement'** to a regular expression to include 'on the clouds', 'high above the clouds', and 'far above the clouds' in capture.
 	- Added a 100ms timeout before the code in trigger **'CloudsMovement'** is executed to help ensure you have actually arrived at the Skies before the check and movement occur. The time could be changed to suit your needs or removed entirely if you feel it's unnecessary.
 	- Modified trigger **'DestinationTrack'** to queue an alias which uses 'SAY Duanathar' instead of the sending the say command directly. Included custom alias setting and clearing when Wings Mode is turned ON or OFF.
@@ -39,11 +63,9 @@
 	- Changed `send_command("SAY Duanathar", true);` to `send_command("queue addclear eqbal wingsmove");` in trigger **'DestinationTrack'**
 	- Added a display notice in the trigger **'DestinationTrack'**
 	- Modified **'On/Off Alias'** to include setting and clearing an alias for 'SAY Duanathar' when Wings Mode is turned ON or OFF.
-
 	#### Mine Collection
 	- Changed the way Mine Collection is handled to help account for latency. Instead of the read sign command occuring in the **'MineCollection'** trigger and then including a Wait For action, I have separated this in to two triggers (**MineCollection1** and **MineCollection2**); one for the mine and one for the sign reading, which is now read at the same time prospecting occurs in the trigger **'ProspectReflex2'** if Mine Collection is ON. This also makes it easier to modify if you want to push the string without getting the city or including the sign reading step, in the case one does not have or want to use Voka's CharacterDB package.
 	- Changed **'On/Off Alias'** to enable or disable both Mine Collection triggers when turned ON or OFF.
-
 ### Issues
 
 - Issue reported in relation to Wings Mode; It seems the line `send_command("SAY Duanathar", true);` in the trigger **'DestinationTrack'** does not always use your wings when the command is sent in this way. I'm uncertain if this happens occasionally or all the time or what the reason could be, but I suspect if it works some of the time then it's related to having or not having balance when used. What I have done instead is change the command in **'DestinationTrack'** to `send_command("queue addclear eqbal wingsmove");` and the alias 'wingsmove' is being set when Wings Mode is turned ON and cleared when Wings Mode is turned OFF. Please let me know if there are still issues with this change.
@@ -62,7 +84,6 @@
 - Adjusted some of the logic in trigger **'ArrivedDestination'**
 - Adjusted some of the logic in alias **'SettingsDisplay'**
 - Modified some parts of the onGMCP to set/change values only when prospecting is happening.
-
 ### Issues
 - Noticed an issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array. Uncertain what the best solution for this might be but I've added it to the To-do list in any case.
 - For those who prospect with a mount and have something in place to mount again should they get knocked off, this could also interfere with prospecting such as with the wendigos in the Tundra as there is nothing currently in place at this time that deals with mounting.
