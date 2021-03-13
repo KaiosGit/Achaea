@@ -4,7 +4,7 @@
 ## March 13, 2021 \- Mining Assistant version 1.6
 ### Changes
 
-- Corrected the trigger text in trigger 'CloudsMovement', if you do not want to bother with downloading a new version for this you can simply replace the trigger text in the trigger 'CloudsMovement' with this line:<br>`^You quickly utter \"Duanathar(an?|ic?)?\" and your wings flare with power before swiftly carrying you up to (on the clouds|high above the clouds|far above the clouds)\.$` if it does not already match that.
+- Corrected the trigger text in trigger **'CloudsMovement'**, if you do not want to bother with downloading a new version for this you can simply replace the trigger text in the trigger **'CloudsMovement'** with this regex line:<br>`^You quickly utter \"Duanathar(an?|ic?)?\" and your wings flare with power before swiftly carrying you up to (on the clouds|high above the clouds|far above the clouds)\.$`<br>...if it does not already match that.
 
 No change to the version number as this is the only minor fix at this time.
 
