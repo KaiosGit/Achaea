@@ -64,16 +64,15 @@ To-do List
 - Travel method from main land to Tundra? Fissure of Echoes?
 - Automate lode reporting.
 - Alter search alias to not return partial matches. (maybe, not entirely necessary)
-- Need method to avoid pushing duplicate strings to mine collection and lode collection arrays.
 
 - (PARTIALLY RESOLVED) Complete 'BlockedByWall' trigger. (Need method to discern the user's capabilities, eg. can they leap? are they mounted?)
 - (PARTIALLY RESOLVED) Complete allowance for Wings Mode; Ensure there are no issues with movement and destination tracking, set room orders specific for Wings Mode.
 - (PARTIALLY RESOLVED) Different types of wings to account for?
-- (PARTIALLY RESOLVED) Account for wendigos in Tundra. At present, their knock-down occasionally interferes with prospecting which must then be re-initialized using MAPR.
-<br>
-✓ (RESOLVED): Vision loss (such as caused by blizzards) interferes with proper GMCP identification of items (eg. reading signs, identify walls).<br>
-✓ (RESOLVED): Issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array.
+- (PARTIALLY RESOLVED) Account for wendigos in Tundra. At present, their knock-down occasionally interferes with prospecting which must then be re-initialized using MAPR.<br>
 
+✓ (RESOLVED): Vision loss (such as caused by blizzards) interferes with proper GMCP identification of items (eg. reading signs, identify walls).<br>
+✓ (RESOLVED): Issue with the Mine Collection caused by high latency, in which movement will occur before the sign gets read, and due to how the trigger works this also leads to the mine not getting pushed to the mine collection array.<br>
+✓ (RESOLVED): Need method to avoid pushing duplicate strings to mine collection and lode collection arrays.<br>
 
 Credits
 -------
