@@ -7,8 +7,6 @@ In order to download this package, you may click the package itself and then on 
 
 REQUIREMENTS - PLEASE READ
 --------------------------
-**NECESSARY:** In order for this package to work, it is REQUIRED that you also have Zahan's MapDB (Map Database) reflex package as well. You can obtain this package from https://github.com/AchaeaZahan/Nexus (instructions for download are provided by his ReadMe on this page).
-
 **OPTIONAL:** If you wish to use the Mine Collection feature, you will also need to have Voka's CharacterDB (Character Database) reflex package. This is necessary in order to get a mine owner's city with their name while prospecting. You can obtain this package from https://forums.achaea.com/discussion/6527/character-db-nexus (right click the link in the post and 'Save Link as').
 
 
@@ -88,3 +86,8 @@ A very special thank you to **FangFang/Chubbs** not only in relation to this pac
 **Voka**, for the creation of the CharacterDB package which is an incredibly useful tool.
 
 Thank you to the testers, **Svenson**, **Aranos**, and **Argwin**!
+
+
+Note
+----
+**NO LONGER NECESSARY:** ~~In order for this package to work, it is REQUIRED that you also have Zahan's MapDB (Map Database) reflex package as well.~~ You can obtain this package from https://github.com/AchaeaZahan/Nexus (instructions for download are provided by his ReadMe on this page).
