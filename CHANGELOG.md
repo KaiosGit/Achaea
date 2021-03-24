@@ -1,6 +1,19 @@
 # Mining Assistant for Nexus
 # Changelog
 
+## March 24, 2021 \- Mining Assistant version 1.7
+### Changes
+
+#### All Functions sending pathing commands in the onLoad changed to send using PATH FIND rather than MapDB's GOTO command. It is unlikely this will make much difference overall in the speed of execution but it means that the MapDB package is no longer required for this package's use.
+- Modified triggers **'MineCollection2'**, **LodeCollection1**, and **LodeCollection2** to no longer push duplicate mines and lodes to their respective arrays. They will however push the same mine when prospected again after the percentage mined has changed.
+- Modified Function 'ma.mineCollection' in onLoad to only read the sign ID if there is a mine at room 'An abandoned quarry' (#7154) in the Sangre Plains. This is the only location I am aware of in any of the prospectable rooms that contains another sign.
+- Once again, re-added the parameter to the onGMCP that prospecting be occuring for some things to happen such as checking for vision and iterating the items. With the change to only requiring item id for a sign in that single room, hopefully this will prevent the same issues happening as when I implemented this change previously.
+- Added trigger **'CeasedWalking'** to group **'ProspectTriggers'** to stop prospecting if balance/eq usage interferes.
+- Added trigger **'OffCourse'** to group **'ProspectTriggers'** which continues movement if taken off-course by something such as water current while prospecting.
+- Removed the information requiring the use of MapDB from the Read Me.
+- Removed the variable set for 'ma.myBalance' from the onGMCP as it was not being used.
+- Adjusted some of the logic in alias **'mavals'**
+
 ## March 13, 2021 \- Mining Assistant version 1.6
 ### Changes
 
