@@ -8,7 +8,7 @@ In order to download this package, you may click the package itself and then on 
 
 The basic idea is that the keys used in the alias roughly correspond to the shape of a person on the keyboard:
 ```
-          [7][8][9]                              [jumpkick][head ][ axekick ]
+          [7][8][9]                              [rndhouse][head ][jump kick]
           [4][5][6]        corresponds to        [left arm][torso][right arm]  
           [1][2][3]                              [left leg][sweep][right leg]
           [ 0 ]                                  [clear queue]
