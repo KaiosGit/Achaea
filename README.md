@@ -1,6 +1,6 @@
-# Mining Assistant for Nexus
+# Consolidated Monks Combos (Modified) for Nexus
 
-Mining Assistant version 1.7<br/>
+Consolidated Monk Combos (Modified) version 1.0<br/>
 Originally created by Keorin
 Modified by Kaios
 
