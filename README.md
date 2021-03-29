@@ -20,7 +20,7 @@ MONKSET : Displays the current settings.
 
 MONKPK : Enables or Disables the Punch or Kick alias, depending on which one happens to be enabled at the time.
 
-MONKCOMBOS : Use this alias to make changes to the numkey tables but remember to replace those changes in the onLoad as well.
+MONKCOMBOS : Use this alias to make changes to the numkey tables without the need to restart your session but remember to replace those changes in the onLoad as well.
 
 
 To-do List
