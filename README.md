@@ -62,7 +62,6 @@ To-do List
 - Option to send Mine/Lode collection to a text file. Save to the same file each time? Create multiple files? If pushing to same, also need date/time (in-game and real) to separate. If pushing to multiple, need date/time as file name.
 - If user is mounted, need implementation that deals with re-mounting during prospecting if/when knocked off mount.
 - Travel method from main land to Tundra? Fissure of Echoes?
-- Automate lode reporting.
 - Alter search alias to not return partial matches. (maybe, not entirely necessary)
 
 - (PARTIALLY RESOLVED) Complete 'BlockedByWall' trigger. (Need method to discern the user's capabilities, eg. can they leap? are they mounted?)
