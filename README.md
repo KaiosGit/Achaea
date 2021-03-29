@@ -28,7 +28,7 @@ MONKCOMBOS : Use this alias to make changes to the numkey tables without the nee
 
 To-do List
 ----------
-- Need to account for Retardatation vibes similar to how Aeon is being accounted for.
+- Need to account for Retardation vibes similar to how Aeon is being accounted for.
 
 
 Credits
