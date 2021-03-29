@@ -13,6 +13,7 @@ The basic idea is that the keys used in the alias roughly correspond to the shap
           [1][2][3]                              [left leg][sweep][right leg]
           [ 0 ]                                  [clear queue]
 ```
+The combo aliases themselves will account for being in Blackout, and not attack should you attempt to while it is afflicted. They will also account for being afflicted with Aeon and use the attacks with less commands accordingly.
 
 List of Commands
 ----------------
