@@ -1,3 +1,5 @@
-# Currently Available Reflex Packages
+# READ ME
 
-## Consolidated Monk Combos (Modified) version 1.0<br/>
+## Consolidated Monk Combos (Modified) version 1.0
+### Originally created by Keorin
+### Modified by Kaios
