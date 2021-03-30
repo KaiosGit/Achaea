@@ -1,7 +1,7 @@
 # Consolidated Monk Combos (Modified) for Nexus
 # Changelog
 
-## March 30, 2021 \- # Consolidated Monk Combos (Modified) version 1.1
+## March 30, 2021 \- Consolidated Monk Combos (Modified) version 1.1
 ### Changes
 
 - Removed `2: swk @tar` from the combo table client.limbTable (Punch Table) from alias **'ComboTables'** and from the **onLoad** function.
