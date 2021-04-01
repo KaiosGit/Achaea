@@ -1,7 +1,7 @@
 # Consolidated Monk Combos (Modified) for Nexus
 # Changelog
 
-## April 1, 2021 \- Consolidated Monk Combos (Modified) version 1.1
+## April 1, 2021 \- Consolidated Monk Combos (Modified) version 1.2
 ### Changes
 
 Changes
