@@ -1,6 +1,6 @@
 # Consolidated Monks Combos (Modified) for Nexus
 
-CONSOLIDATED MONK COMBOS (Modified) version 1.1<br>
+CONSOLIDATED MONK COMBOS (Modified) version 1.2<br>
 Original package created by Keorin<br>
 Modifications made by Kaios<br>
 
