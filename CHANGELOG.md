@@ -4,8 +4,6 @@
 ## April 1, 2021 \- Consolidated Monk Combos (Modified) version 1.2
 ### Changes
 
-Changes
-
 - Removed designation of 'true' from all SETALIAS commands in the functions contained in the **onLoad** as this appeared to cause more problems than it solved.
 - Modified aliases **'FullCombo'**, **'Punch'**, and **'Kick'** to include `parseInt()` when setting the `monkVal` variables. Will ensure the variable type is a number, rather than a string.
 
