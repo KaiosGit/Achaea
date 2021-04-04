@@ -1,6 +1,6 @@
 # Consolidated Monks Combos (Modified) for Nexus
 
-CONSOLIDATED MONK COMBOS (Modified) version 1.2<br>
+CONSOLIDATED MONK COMBOS (Modified) version 1.3<br>
 Original package created by Keorin<br>
 Modifications made by Kaios<br>
 
@@ -24,6 +24,8 @@ MONKSET : Displays the current settings.
 MONKPK : Enables or Disables the Punch or Kick alias, depending on which one happens to be enabled at the time.
 
 MONKCOMBOS : Use this alias to make changes to the numkey tables without the need to restart your session but remember to replace those changes in the onLoad as well.
+
+MONKLOAD : Runs the "onLoad" function for this package, reloading the settings without the need for a session restart.
 
 
 To-do List
