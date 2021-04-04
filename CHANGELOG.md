@@ -5,7 +5,7 @@
 ### Changes
 
 - Modified the SETALIAS commands in the **onLoad** function to include assessing the target. To do this without the associated equilibrium cost however requires that you have HEALTH INSPECTOR as one of your major traits.
-- Added an alias that runs the **onLoad** function for the package so that it is easier to make/test changes to the combo functions without restarting the session each time.
+- Added alias **'Reload Settings'** that runs the **onLoad** function for the package so that it is easier to make/test changes to the combo functions without restarting the session each time.
 
 The highest number of commands in one alias is currently at 12, however, a multi-command alias can (at this time) include up to 20 separate commands meaning you could add more to these if you would like to do so. Keep in mind however that the total number of allowable commands could likely decrease from 20 in the future.
 
